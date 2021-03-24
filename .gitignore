@@ -8,3 +8,10 @@
 /.idea/
 *.py[cod]
 __pycache__/
+O.*/
+/bin/
+/lib/
+/db/
+/dbd/
+/include/
+RELEASE.local

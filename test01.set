@@ -1,4 +1,6 @@
 MODULES="sncseq"
 
-BASE=7.0
+BASE=add_nodefaultlib
 SNCSEQ=R2-2-8
+
+BASE_REPOOWNER=FreddieAkeroyd
