@@ -75,7 +75,6 @@ environment:
   - CMP: vs2019
     SET: test00
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-  - CMP: gcc
   - CMP: vs2019
     VV: 0
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
@@ -96,6 +95,7 @@ environment:
   - CMP: vs2012
   - CMP: vs2010
   - CMP: vs2008
+  - CMP: gcc
 
 # Platform: architecture
 platform:
