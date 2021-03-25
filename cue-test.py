@@ -88,7 +88,7 @@ class TestSourceSet(unittest.TestCase):
         sys.stdout = capturedOutput
         cue.source_set('test01')
         sys.stdout = sys.__stdout__
-        self.assertEqual(cue.setup['BASE'], '7.0', 'BASE was not set to \'7.0\'')
+        self.assertEqual(cue.setup['BASE'], 'add_nodefaultlib', 'BASE was not set to \'7.0\'')
 
     def test_SetupDoesNotOverridePreset(self):
         os.environ['BASE'] = 'foo'
@@ -306,7 +306,7 @@ class TestAddDependencyOptions(unittest.TestCase):
 
     def test_DefaultBaseBranch(self):
         cue.complete_setup('BASE')
-        self.assertEqual(cue.setup['BASE'], '7.0',
+        self.assertEqual(cue.setup['BASE'], 'add_nodefaultlib',
                          'Default Base branch is not 7.0 (found {0})'.format(cue.setup['BASE']))
 
 
